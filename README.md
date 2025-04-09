@@ -1,9 +1,9 @@
-## Interactive Laptop Recommendation Chatbot
+## Interactive Laptop Recommendation Assistant Chatbot
 
 ---
 
 ### Project Introduction
-The **Interactive Laptop Recommendation Chatbot** is an AI-driven assistant that helps users select the best laptop based on their budget, purpose, and preferences. It features natural language interaction, image-based laptop identification, and personalized recommendations to streamline the laptop-buying process.
+The **Interactive Laptop Recommendation Assistant Chatbot** is an AI-driven assistant that helps users select the best laptop based on their budget, purpose, and preferences. It features natural language interaction, image-based laptop identification, and personalized recommendations to streamline the laptop-buying process.
 
 #### Key Features:
 - **AI-powered Laptop Recommendations** - Get suggestions based on budget, usage (gaming, work, study), portability, and brand.
