@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #333;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .api-output {
+            font-size: 1em; /* Font size consistent with the main text */
+            color: #444; /* Dark gray font color */
+            line-height: 1.5; /* Adjust line spacing */
+            font-style: italic; /* Optional: Display in italics */
+            margin: 10px 0; /* Adjust top and bottom margin */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        li strong {
+            font-size: 1em;
+            color: #000;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommendations for</h1>
+    <p class="api-output">{{ profession }}</p>
+    <p>Your budget: ${{ budget }}</p>
+
+    {% if recommendations and recommendations|length > 0 %}
+        <h2>Here are some laptops for you:</h2>
+        <ul>
+            {% for laptop in recommendations %}
+            <li>
+                <strong>Model:</strong> {{ laptop.model }} <br>
+                <strong>Price:</strong> ${{ laptop.price }} <br>
+                <strong>GPU:</strong> {{ laptop.gpu }} <br>
+                <strong>RAM:</strong> {{ laptop.ram }} GB <br>
+                <strong>Weight:</strong> {{ laptop.weight }} kg <br>
+                <strong>Tags:</strong> {{ laptop.tags }} <br>
+                <a href="{{ laptop.link }}" target="_blank">View on Amazon</a>
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h2>End of recommendations!</h2>
+        <p>Try changing your budget or description.</p>
+    {% endif %}
+</body>
+</html>
