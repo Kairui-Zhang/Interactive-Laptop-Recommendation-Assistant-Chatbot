@@ -25,7 +25,7 @@ Follow these steps to clone and set up the project:
 
 #### Step 1: Clone the Repository
 ```
-git clone https://github.com/HAOJUN-LIANG/Interactive-Laptop-Recommendation-Chatbot.git
+git clone https://github.com/Kairui-Zhang/Interactive-Laptop-Recommendation-Assistant-Chatbot.git
 cd Interactive-Laptop-Recommendation-Chatbot-main
 ```
 
